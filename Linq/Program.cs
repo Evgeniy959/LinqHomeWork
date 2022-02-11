@@ -34,7 +34,11 @@ namespace Linq
                 case "3": // 3. Отобразить название столиц
                     var listCap = from country in countries
                         select country.Capital;
-                    Show.ShowRes(listCap);
+                    //Show.ShowRes(listCap);
+                    foreach (var item in listCap)
+                    {
+                        Console.WriteLine($"{item}");
+                    }
                     break;
                 case "4": // 4. Отобразить название всех европейских стран
                     var listEu = from country in countries

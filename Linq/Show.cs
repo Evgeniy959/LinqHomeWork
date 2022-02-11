@@ -25,9 +25,9 @@ namespace Linq
         {
             foreach (var country in collection)
             {
-                if (country is Country it)
+                /*if (country is Country it)
                     Console.WriteLine($"Страна: {it.Name}\nСтолица: {it.Capital}\nНаселение: {it.Population} человек\nПлощадь: {it.Territory} км^2\nЧасть света: {it.PartOfTheWorld}\n");
-                    else Console.WriteLine($"{country}");
+                    else*/ Console.WriteLine($"{country}");
             }
 
         }
